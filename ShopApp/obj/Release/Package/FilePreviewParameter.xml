@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="paziomilena-001-subsite6" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\ProjectToday\\ShopApp\\ShopApp\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\ProjectToday\\ShopApp\\ShopApp\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="paziomilena-001-subsite6/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\ProjectToday\\ShopApp\\ShopApp\\obj\\Release\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=SHOPAPP_2f1070dd8edd448d9acb5a2895deac18;Integrated Security=True;Persist Security Info=True;TrustServerCertificate=True" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\ProjectToday\\ShopApp\\ShopApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="ShopApp-Web.config Connection String" description="" value="Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=SHOPAPP_2f1070dd8edd448d9acb5a2895deac18;Integrated Security=True" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\ProjectToday\\ShopApp\\ShopApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ShopApp']/@connectionString" />
+  </parameter>
+</parameters>
